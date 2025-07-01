@@ -2,6 +2,7 @@ import cors from "cors";
 import express from "express";
 import mongoose from "mongoose";
 import "./loadEnv.mjs";
+import ProductRouter from "./routes/products.route.mjs";
 
 const app = express();
 const port = process.env.PORT;
@@ -13,6 +14,8 @@ app.use(cors());
 app.get("/", (req, res) => {
   res.send("Welcome to the Express API!");
 });
+
+app.use("/api/products", ProductRouter);
 
 // Error Handler Middleware
 app.use((err, req, res, next) => {
