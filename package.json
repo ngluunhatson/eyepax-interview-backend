@@ -1,0 +1,24 @@
+{
+  "author": "",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "mongoose": "^8.16.0"
+  },
+  "description": "",
+  "devDependencies": {
+    "nodemon": "^3.1.10",
+    "prettier": "^3.6.1"
+  },
+  "license": "ISC",
+  "main": "index.js",
+  "name": "app-backend",
+  "scripts": {
+    "dev": "nodemon index.mjs",
+    "start": "node index.mjs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "type": "module",
+  "version": "1.0.0"
+}
