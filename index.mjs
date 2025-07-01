@@ -9,7 +9,7 @@ const port = process.env.PORT;
 app.use(express.json());
 app.use(cors());
 
-// Basic route for the home page
+// Basic route
 app.get("/", (req, res) => {
   res.send("Welcome to the Express API!");
 });
